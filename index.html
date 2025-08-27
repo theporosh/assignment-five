@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- tailwind.init.css file link -->
-    <link rel="stylesheet" href="tailwind.init.css">
+    <link rel="stylesheet" href="styles.css/style.css">
 
 </head>
 
@@ -36,7 +36,7 @@
         <div class="flex justify-center items-center">
 
             <div class="flex justify-center rounded-xl items-center mr-5 w-[123px] h-[52px] bg-[#41ff6b1a] p-3">
-                <span class="w-[12px] h-[24px] font-black mr-2.5 text-center inter-font">0</span>
+                <span id="heartCount" class="w-[12px] h-[24px] font-black mr-2.5 text-center inter-font">0</span>
                 <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
             </div>
 
@@ -45,7 +45,7 @@
                 <img class="w-[24px] h-[24px]" src="./assets/coin.png" alt="">
             </div>
 
-            <button class="bg-[#00a63e] rounded-full font-semibold px-6 sm:px-9 py-2 sm:py-3 text-white inter-font"><span>2</span> Copy</button>
+            <button class="bg-[#00a63e] rounded-full font-semibold hover:bg-green-700 px-6 sm:px-9 py-2 sm:py-3 text-white inter-font"><span>2</span> Copy</button>
 
         </div>
 
@@ -93,7 +93,7 @@
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">999</div>
@@ -101,7 +101,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -124,7 +124,7 @@
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">999</div>
@@ -132,7 +132,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -148,14 +148,14 @@
                    <img class="w-8 h-8" src="./assets/fire-service.png" alt="">
                 </div>
                 
-                <div>
+                <div class="mb-8">
                    <h2 class="font-bold hind-madurai-font text-2xl">Fire Service Number</h2>
                    <p class="text-[#5C5C5C] roboto-font text-[18px]">Fire Service</p>
                 </div>
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">999</div>
@@ -163,7 +163,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -179,14 +179,14 @@
                    <img class="w-8 h-8" src="./assets/ambulance.png" alt="">
                 </div>
                 
-                <div>
+                <div class="mb-8">
                    <h2 class="font-bold hind-madurai-font text-2xl">Ambulance Service</h2>
                    <p class="text-[#5C5C5C] roboto-font text-[18px]">Ambulance</p>
                 </div>
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">1994-999999</div>
@@ -194,7 +194,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -217,7 +217,7 @@
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">109</div>
@@ -225,7 +225,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -248,7 +248,7 @@
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">106</div>
@@ -256,7 +256,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -273,14 +273,14 @@
                    <img class="w-8 h-8" src="./assets/emergency.png" alt="">
                 </div>
                 
-                <div>
+                <div class="mb-8">
                    <h2 class="font-bold hind-madurai-font text-2xl">Electricity Helpline</h2>
                    <p class="text-[#5C5C5C] roboto-font text-[18px]">Electricity Outage</p>
                 </div>
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">16216</div>
@@ -288,7 +288,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -305,14 +305,14 @@
                    <img class="w-8 h-8" src="./assets/brac.png" alt="">
                 </div>
                 
-                <div>
+                <div class="mb-8">
                    <h2 class="font-bold hind-madurai-font text-2xl">Brac Helpline</h2>
                    <p class="text-[#5C5C5C] roboto-font text-[18px]">Brac</p>
                 </div>
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">16445</div>
@@ -320,7 +320,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -344,7 +344,7 @@
             </div>
 
             <!-- icon love -->
-            <i class="fa-regular fa-heart text-[#5C5C5C] mb-auto"></i>
+            <i class="heart-icon-count fa-regular fa-heart mb-auto"></i>
         </div>
 
         <div class="font-bold roboto-font text-[#111111] text-3xl">163</div>
@@ -352,7 +352,7 @@
 
         <div class="flex justify-between gap-2">
             <!-- copy and call button -->
-         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-100 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
+         <button class="w-1/2 py-1 border border-gray-300 rounded-lg hover:bg-gray-300 text-sm"><i class="fa-regular fa-copy"></i>  Copy</button>
          <button class="w-1/2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm"><i class="fa-solid fa-phone"></i>  Call</button>
         </div>
 
@@ -366,7 +366,7 @@
     <div class="bg-white w-full lg:w-80 rounded-lg p-4">
          <div class="flex justify-between items-center mb-4">
             <h2 class="font-bold text-[#111111] roboto-font text-xl"><i class="fa-regular fa-clock"></i> Call History</h2>
-            <button class="bg-[#00A63E] rounded-full font-semibold px-4 py-3 text-sm text-white inter-font">Clear</button>
+            <button class="bg-[#00A63E] rounded-full font-semibold px-4 py-3 hover:bg-green-700 text-sm text-white inter-font">Clear</button>
          </div>
 
          <div id="transaction-container">
@@ -388,7 +388,10 @@
 
 </div>    
 </div> 
-<!-- main section -->
+<!-- main section End -->
+
+<!-- Js Script file -->
+    <script src="./home.js"></script>
 
 </body>
 
