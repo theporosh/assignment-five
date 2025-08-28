@@ -94,45 +94,33 @@ updateCoinDisplay();
 
 
 
-// copy button all code start here
+// copy button all code start here***********************
 
 let copyCount = 0;
 
-// Function to update copy count in UI
+// Function to update copy count in display
 function updateCopyCount() {
     const copyCountElement = document.getElementById("copyCount");
-    if (copyCountElement) {
-        copyCountElement.innerText = copyCount;
-    }
+    copyCountElement.innerText = copyCount;
 }
 
-// Get all copy buttons
+// Getting all copy buttons
 const copyButtons = document.querySelectorAll(".copy-btn");
 
 copyButtons.forEach(button => {
     button.addEventListener("click", function () {
-        // Find the parent card
+
         const card = button.closest(".call-btn-container");
-
-        if (!card) return;
-
-        // Get the service number from this card
         const numberElement = card.querySelector(".service-number");
-        if (!numberElement) return;
-
         const numberToCopy = numberElement.innerText;
 
         // Copy to clipboard
         navigator.clipboard.writeText(numberToCopy).then(() => {
-            // Alert success message
-            alert(`Copied: ${numberToCopy}`);
 
-            // Increase count and update display
+        alert(`The service number has been copied: ${numberToCopy}`);
+
             copyCount++;
             updateCopyCount();
-        }).catch(err => {
-            console.error("Copy failed:", err);
-            alert("Failed to copy the number.");
-        });
+        }) 
     });
 });
