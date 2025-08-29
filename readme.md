@@ -1,109 +1,5 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
-
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
-
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
 
 ---
-
-## ✅ Main Requirements (50 Marks)
-
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
-
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
 ## Create Readme
 
 You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
@@ -115,51 +11,145 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
 ---
 
-## 🧪 Challenges Part (10 Marks)
+### Answer to the Question number 1
+ 
+ The difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll is below:
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+(i). **getElementById**
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
+1. We can find a specific element from the HTML document using its ID
+2. getElementById one element can return
+3. HTMLElement type of object can return
+4. It is return null if certain element do not exist
+5. Example of use: const myName = document.getElementById("my-name")
+In html file there is only one id that has name used like this : id =  "my-name"
 
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
 
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
+(ii). **getElementsByClassName**
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
+1. If we need some element from the HTML document that has certain class name then we can use getElementsByClassName.
+2. We can get multiple element.
+3. It is return HTML Collection array like object
+4. If matching element not found then it is return and empty collection which length is 0. HTMLCollection []
+5. Example of use: const className = document.getElementsByClassName("class-five")
+  In html file there is some class that has name : class = "class-five" 
 
-💡Hint: Search Google with that below question
+(iii) **querySelector**
 
-```bash
-How to get current local time in js
-```
+1. It returns the first matching element according to the CSS selector.
+2. Returns an HTMLElement, or null if not found.
+3. With this we can use id, class, tag, or any CSS selector. 
+4. Example of use : const firstItem =  document.querySelector("#dhaka p");
+5. Example of use : const firstTitle =  document.querySelector(".main-title");
 
----
 
-## ⚙️ Technology Stack
+(iv) **querySelectorAll**
 
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
+1. It returns a NodeList of all matching elements.
+2. NodeList is like an array, in which we can loop (forEach or other).
+3. We can use it to select like a CSS selector.
+4. It return NodeList(3)[li.foreign, li.foreign, li.foreign] array like object
+5. It is return an empty array like object NodeList [] if the element not found on document
+6. Example one: Assuming we have a list item that parent class is food and there some list class item naming foreign then we can write:  document.querySelectorAll(".food . foreign")
+7. Example two: Assuming we have parent element that has an id name dhaka that child element p we need then we can write: document.querySelectorAll("#dhaka p")
 
----
 
-## 📌 Rules
+### Answer to the Question number 2
 
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
+To create and insert a new element into the DOM the steps are below:
 
----
+## Create the Element
+I can use document.createElement() to create a new element (like div, li, p etc)
 
-## 🔗 What to Submit
+Example: const newElement = document.createElement("li")
 
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
+## Set Attributes
 
----
+We can add remove any style by using classList
 
-# Let's Code and Achieve your Dream 🎯
+Example: newElement.classList.add("bg-white")
+
+We can also set value by using innerText
+
+Example: foodElement.innerText = "Snakes Item"
+
+## Insert into the DOM
+
+We can use append() for insert new element into the DOM
+
+For example: create and insert an new element into the DOM
+<body>
+  <div id="container"></div>
+  <script>
+    const newElement = document.createElement("div");
+    newElement.innerText = "This is a new element!";
+    newElement.classList.add("box");
+    const container = document.getElementById("container");
+    container.append(newElement);
+  </script>
+</body>
+
+### Answer to the Question number 3
+
+Event bubbling is a mechanism in the DOM where an event starts from the target element 
+(where the event happened) and then bubbles up to its parent, grandparent, and so on — all the way up to the root html document. If we click on child element then that event also trigger on parent element.
+
+How does it works explain with example below:
+
+Suppose i have this html code:
+<div id="parent">
+  <button id="child">Click Me</button>
+</div>
+
+JavaScript Code:
+
+document.getElementById("child").addEventListener("click", function () {
+  console.log("Child clicked");
+});
+
+document.getElementById("parent").addEventListener("click", function () {
+  console.log("Parent clicked");
+});
+
+Now if we click the child button, the output will be:
+
+Child clicked
+Parent clicked
+
+Because the click event:
+
+Happened on child
+Then bubbled up to parent
+
+
+### Answer to the Question number 4
+
+Event Delegation is a technique where can attach a single event listener to a parent element, and then use that to handle events for its child elements — even if they’re added dynamically.
+
+It is useful for below:
+1. Use of event handler for parent element we can apply it for child element.
+2. Instead of adding event listeners to every single child element (like each button or list item), add just one listener to the parent. That listener "catches" bubbled events and determines which child was actually clicked. This works because of Event Bubbling.
+3. It is also help for memory optimization.
+4. Event Delegation = Letting parent elements handle events for their children, using bubbling.
+
+
+### Answer to the Question number 5
+
+(i). **stopPropagation()**
+
+1. If we want to stop the event bubbling then we can use event.stopPropagation() method.
+This prevents the event from going up the DOM tree. So the event stops from bubbling up to parent elements.
+
+(ii). **preventDefault()**
+
+1. It stops the default action of an element from happening.
+Specially When the browser to perform its default behavior (like submitting a form). Then we can stop the 
+default mechanism by using preventDefault(e) it like this.
+
+
+
+
+
+
